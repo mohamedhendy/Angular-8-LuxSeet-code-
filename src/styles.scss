@@ -1,0 +1,164 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap";
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css";
+@import "https://fonts.googleapis.com/css?family=Girassol|Ma+Shan+Zheng&display=swap";
+@import "https://fonts.googleapis.com/css?family=Anton|Girassol|Ma+Shan+Zheng&display=swap";
+@import "https://fonts.googleapis.com/css?family=Anton|Crimson+Text|Fjalla+One|Girassol|Ma+Shan+Zheng|Open+Sans+Condensed:300&display=swap";
+$main-color: #d65212;
+$second-color: #0d808c;
+
+body {
+  font-family: 'Ma Shan Zheng', cursive;
+  font-family: 'Girassol', cursive;
+  font-family: 'Anton', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Crimson Text', serif;
+  font-family: 'Fjalla One', sans-serif;
+}
+.ex-services {
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+.b-font {
+  font-family: "Ma Shan Zheng", cursive;
+  font-family: "Girassol", cursive;
+  font-family: "Anton", sans-serif;
+}
+.active-page {
+  color: $main-color !important;
+}
+.f-color {
+  color: $main-color;
+}
+.s-color {
+  color: $second-color;
+}
+p {
+  @media (max-width: 992px) {
+    font-size: 0.8rem;
+  }
+}
+nav {
+  transition: all 0.2s ease-in-out;
+  .nav-link {
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      color: $main-color !important;
+    }
+  }
+}
+.scrolled {
+  background-color: #252a2b !important;
+  border-bottom: 3px solid $main-color !important;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba($color: #000000, $alpha: 0.8);
+}
+.btn-global {
+  background-color: $main-color;
+  color: #fff;
+  border: 2px solid $main-color;
+
+  &:hover {
+    color: $main-color;
+    background-color: transparent;
+  }
+}
+.btn-sub {
+  background-color: $second-color;
+  color: #fff;
+  border: 2px solid $second-color;
+
+  &:hover {
+    color: $second-color;
+    background-color: transparent;
+  }
+}
+.header-body {
+  .offers {
+    .card {
+      .off-icons {
+        margin-top: 3rem;
+      }
+      .card-body {
+        .offers-title {
+          width: 20%;
+          border-bottom: 3px solid $main-color;
+        }
+      }
+    }
+  }
+}
+.toverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(89, 158, 248, 0.5);
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+}
+.amdhov:hover .toverlay {
+  opacity: 1;
+}
+.bspan {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+  color: #fff;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+}
+.amdhov:hover {
+  cursor: pointer;
+}
+.amdhov:hover .bspan {
+  opacity: 1;
+  -webkit-transform: translatey(-250%);
+  -ms-transform: translatey(-250%);
+  transform: translatey(-250%);
+}
+.fa-facebook,
+.fa-facebook-f {
+  color: #4267b2;
+  &:hover {
+    color: rgb(16, 67, 168);
+  }
+}
+.fa-instagram,
+.active-page {
+  color: #e66b5a;
+}
+.fa-linkedin {
+  color: #0077b5;
+  &:hover {
+    color: rgb(9, 48, 126);
+  }
+}
+.fa-twitter {
+  color: rgb(38, 148, 207);
+  &:hover {
+    color: rgb(22, 84, 206);
+  }
+}
+.fa-vimeo-v {
+  color: #b52125;
+  &:hover {
+    color: #7c2427;
+  }
+}
+.fa-github {
+  color: #0c0c0c;
+  &:hover {
+    color: rgb(39, 35, 35);
+  }
+}

@@ -1,0 +1,41 @@
+footer {
+  .first-foo {
+    background-color: #d65212;
+  }
+  .second-foo {
+    background-color: #000;
+    .links{
+      .f-color {
+        &:hover {
+          color: #cc7447;
+          text-decoration: none;
+        }
+      }
+    }
+    .card {
+      background-color: transparent;
+      color: rgb(139, 136, 136);
+      .card-body{
+        @media (max-width: 576px) {
+          text-align: center;
+        }
+      }
+      .footer-icon {
+        i {
+          border: 1px solid rgb(139, 136, 136);
+          padding: 1.5rem;
+          border-radius: 100px;
+          @media (max-width: 768px) {
+            font-size: 1rem;
+          }
+        }
+        .fa-map-marker-alt {
+          padding: 1.5rem 2rem;
+          @media (max-width: 768px) {
+            padding: 1.5rem 1.7rem;
+          }
+        }
+      }
+    }
+  }
+}

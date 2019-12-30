@@ -1,0 +1,22 @@
+.offers{
+    .card {
+        transition: all .5s ease-in-out;
+        .off-icons {
+            transition: margin .3s ease-in-out;
+        }
+        &:hover{
+            background-color: #d65212;
+            color: #FFF;
+            p {
+                color: #FFF !important;
+            }
+            .off-icons{
+                margin-top: 0;
+                margin-bottom: 3rem;
+            }
+            .offers-title {
+                border-bottom: 3px solid #e7f2f3;
+              }
+        }
+    }
+}

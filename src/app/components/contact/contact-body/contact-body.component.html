@@ -1,0 +1,53 @@
+<div class="cont-header">
+
+</div>
+<div class="contact-page py-5">
+    <div class="text-center">
+        <h1 class="text-center d-inline-block py-1 mt-5 mb-2 f-color text-uppercase">Contact us</h1>
+        <p class="text-muted mb-5">We will contact you within 24 hours.</p>
+    </div>
+    <div class="forms-inputs p-5  m-auto">
+        <div class="register-form">
+            <form action="" (ngSubmit)="onSubmit()" #myForm="ngForm">
+                <div class="form-group text-center">
+                    <ul class="list-unstyled felids px-0">
+                        <label for="full-name">Name *</label>
+                        <li class="d-flex">
+                            <i class="fas fa-user"></i>
+                            <input ngModel #name="ngModel" name="name" type="text" required
+                                class="form-control pl-5  mb-4 mb-4 name.invalid" id="full-name" required>
+                        </li>
+                        <div *ngIf="name.invalid && (name.dirty || name.touched)" class="alert alert-danger">
+                            <div *ngIf="name.errors.required">
+                                Name is required.
+                            </div>
+                        </div>
+                        <label for="email">Email *</label>
+                        <li class="d-flex">
+                            <i class="fas fa-envelope"></i>
+                            <input ngModel #email="ngModel" name="email" type="email" required id="email"
+                                class="form-control pl-5  mb-4">
+                        </li>
+                        <div *ngIf="email.invalid && (email.dirty || email.touched)" class="alert alert-danger">
+                            <div *ngIf="email.errors.required">
+                                Email is required.
+                            </div>
+                        </div>
+                        <label for="message">Message Content </label>
+                        <li class="d-flex">
+                            <textarea id="message" class="form-control" rows="10"></textarea>
+                        </li>
+                        <li class="action-btn">
+                            <input type="submit" class="d-inline-block btn-global btn btn-lg" value="Submit">
+                        </li>
+                    </ul>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="map">
+    <iframe class="w-100"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14610049.559018193!2d21.856659345987513!3d26.61943941976208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14368976c35c36e9%3A0x2c45a00925c4c444!2sEgypt!5e0!3m2!1sen!2seg!4v1577588586513!5m2!1sen!2seg"
+        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+</div>
